@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>DOOR GUARDIAN</title>
+        <meta name="description" content="doorguard">
+        <meta name="author" content="@geekoNERD">
+
+        <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+
+            <h5 class="text-center"><code>d00rgu4rd!</code></h5>
+            <div class="panel panel-primary">
+                <div class="panel-body text-center">
+                    <input type="button" id="btn_reset" value="RESET" />
+                    <input type="button" id="btn_previous" value="« (previous)" />
+                    <input type="button" id="btn_next" value="(next) »" />
+                    <input type="checkbox" id="ckb_realtime" checked="checked" /> real-time
+                </div>
+            </div>
+
+            <div id="progress" class="progress hidden">
+                <div class="progress-bar progress-bar-striped active" role="progressbar"
+                     aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                     style="width: 100%">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+
+            <div id="message" class="alert hidden"></div>
+
+            <div id="checkin" class="hidden app-panel">
+                <div class="panel panel-success">
+                    <div class="panel-body">
+                        <div id="current_statuses"></div>
+                        <ul id="checkin_data"></ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="/jquery/jquery.js"></script>
+        <script src="/bootstrap/js/bootstrap.js"></script>
+        <script src="/moment/moment-with-locales.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+
+</html>

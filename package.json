@@ -1,0 +1,29 @@
+{
+    "name": "doorguard",
+    "scripts": {
+        "start": "node main.js"
+    },
+    "version": "1.0.0",
+    "keywords": [
+        "door",
+        "guard",
+        "raspberry pi"
+    ],
+    "author": "geekonerd",
+    "description": "a simple door guardian made with raspberry pi",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/geekonerd/doorguard.git"
+    },
+    "license": "GPL-3.0",
+    "contributors": [],
+    "dependencies": {
+        "ent": "^2.2.0",
+        "express": "^4.16.3",
+        "mongodb": "~2.2.0",
+        "socket.io": "~1.7.0",
+	"jquery":"~3.2.1",
+	"moment":"~2.22.2",
+	"bootstrap":"~3.3.7"
+    }
+}
